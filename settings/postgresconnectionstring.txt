@@ -1,0 +1,1 @@
+${format('dbName="{0}" user="{1}" host="{2}.postgres.database.azure.com" password="{3}" port="{4}" sslmode="(5)"'| '${postgresql.outputs.databaseName }'| '${postgresql.outputs.serverName }'| '${postgresql.outputs.userName }'| '${postgresql.outputs.password }'| 5432| true)}
