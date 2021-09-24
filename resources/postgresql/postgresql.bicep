@@ -20,6 +20,9 @@ resource postgresqlDatabase 'Microsoft.DBforPostgreSQL/servers/databases@2017-12
     charset: 'utf8'
     collation: 'English_United States.1252'
   }  
+  dependsOn:[
+    postgresqlserver
+  ]
 }
 
 output serverName string = resourceName
